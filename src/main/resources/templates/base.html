@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+
+<body>
+
+<head th:fragment="head">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta content="ie=edge" http-equiv="x-ua-compatible" />
+<title th:text="${metaTitle} ? ${metaTitle} : 'default title'"></title>
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/>
+<link rel="stylesheet" href="/css/style.css"/>
+</head>
+
+<div th:fragment="navlinks">
+    <a href="/"> Index</a>
+    <a href="/about"> About </a>
+    <a href = "/contact"> Contact Us </a>
+
+</div>
+<div th:fragment="footer">copyright 2017</div>
+</body>
+</html>
